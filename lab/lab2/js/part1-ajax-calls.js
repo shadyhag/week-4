@@ -10,10 +10,14 @@
 
   This recipe, given to underscore's _.filter will return only the elements we want.
 ===================== */
-var isLengthOfFiveOrMore = function(str) {};
+var isLengthOfFiveOrMore = function(str) {
+  if (str.length >= 5 )
+    {return true;}
+  else {return false;}};
 
 console.log("isLengthOfFiveOrMore success:",
   _.isEqual(_.filter(['this', 'is','a', 'test', 'testing'], isLengthOfFiveOrMore), ['testing']));
+
 
 
 /* =====================
@@ -21,15 +25,18 @@ console.log("isLengthOfFiveOrMore success:",
   function you write along with underscore's _.each to log the double of every
   number in the provided array.
 ===================== */
-var logDouble = function(num) {};
+var logDouble = function(num) {
+  console.log(num*2);
+};
 var theArray = [1, 5, 20, 100];
 
+_.each(theArray,logDouble);
 
 /* =====================
   Given this already defined function, define fizzbuzzArray so that, when mapped
   over, it will equal ['fizz', 'buzz', 'fizzbuzz'];
 ===================== */
-var fizzbuzzArray = [];
+var fizzbuzzArray = [3,5,15];
 var fizzbuzzFunc = function(num) {
   var str = '';
   if (num % 3 === 0) { str = 'fizz'; }
@@ -84,7 +91,15 @@ var phillySolarInstallationDataUrl = "https://raw.githubusercontent.com/CPLN690-
 var phillyCrimeDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-crime-snippet.json";
 var phillyBikeCrashesDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-bike-crashes-snippet.json";
 
+$.ajax(phillySolarInstallationDataUrl).done(function(phillySolarInstallationDataUrl) {
 
+var computedValue = JSON.parse(phillySolarInstallationDataUrl);
+
+console.log(computedValue);
+createMarkers(computedValue);
+});
+
+console.log(phillyBikeCrashesDataUrl);
 /* =====================
   Data you grab through ajax is just text. You'll need to parse it as javascript
   objects to really work with it. Use the function JSON.parse on the string you
@@ -99,3 +114,22 @@ var phillyBikeCrashesDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA61
   Now that you've properly parsed your data, use _.each to plot the
   dataset you've pulled down.
 ===================== */
+
+var map = L.map('map', {
+  center: [39.9522, -75.1639],
+  zoom: 14
+});
+var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  subdomains: 'abcd',
+  minZoom: 0,
+  maxZoom: 20,
+  ext: 'png'
+}).addTo(map);
+
+
+var createMarkers = function(computedValue) {
+  _.each(computedValue, function(obj){
+    var marker = L.marker([obj.Y, obj.X]).addTo(map);
+  });
+};

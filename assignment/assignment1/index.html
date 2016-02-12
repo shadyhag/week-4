@@ -4,10 +4,13 @@
     <!-- CSS Imports -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <!-- =====================
     Edit css/main.css
+
     ====================== -->
-    <link rel="stylesheet" href="css/main.css" />
+
   </head>
   <body>
 
@@ -27,7 +30,8 @@
     Take a look at the image assignment-screen.png. Add HTML inside of the
     element <div class="sidebar"></div> and add CSS inside the file
     css/style.css to recreate this content in the browser. You do not need to
-    create the list of schools dynamically using the data—just hardcode three schools (in a future assignment, we will generate the list with the same data that we use to generate markers on our map!).
+    create the list of schools dynamically using the data—just hardcode three
+    schools (in a future assignment, we will generate the list with the same data that we use to generate markers on our map!).
 
     Start by trying to make it look as much like the image as possible.
 
@@ -42,6 +46,37 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
+        <h1 class = "title"> Filters </h1>
+
+
+        <h2> By Name</h2>
+          <div class = "search">
+            <input id="addressFrom" size="33" type="textbox">
+          </div>
+        <h2> By Grade</h2>
+        <div class="styleSheet">
+        <select class = "button">
+            <option>All Grades</option>
+            <option>Oranges</option>
+            <option>Banannas</option>
+          </select>
+        </div>
+        <h1 class= "schools"> Schools </h1>
+            <div class ="box">
+                <p class = "schoolName"> &nbsp;Henry, Charles W. </p>
+                <p class = "level"> Elem/Middle </p>
+                <p class = "address"> 601 Carpenter La. <br> 19119-3405</br> </p>
+            </div>
+            <div class ="box">
+                <p class = "schoolName"> &nbsp;Universal Creighton Charter School </p>
+                <p class = "level"> Elem/Middle </p>
+                <p class = "address"> 5401 Taber Ave <br> 19210-3614 </p>
+            </div>
+            <div class = "box">
+                <p class = "schoolName"> &nbsp;Marshall, John </p>
+                <p class = "level"> Elementary School </p>
+          </div>
+    </div>
 
       <!-- =====================
       Add HTML!
@@ -49,6 +84,7 @@
 
     </div>
     <!-- Map -->
+
     <div id="map" class="map"></div>
 
     <!-- Javascript Imports -->
