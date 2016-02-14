@@ -1,9 +1,103 @@
 body {
     padding: 0;
-    overflow: hidden;
     font-family: helvetica, arial, sans-serif;
 }
+
+
 
 /* =================
 Add more styles here!
 ================= */
+
+.vertical-wrapper{
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+}
+
+.welcome{
+    vertical-align: middle;
+  	text-align: center;
+  	margin: 0 20% 25% 20%;
+}
+
+.welcome h1
+{ margin: 0px 70px 50px 70px;
+	font-size:90px;
+	line-height: 50px;
+	font-weight: 900;
+	text-transform: UPPERCASE;
+	letter-spacing: 10px;
+  padding-top: 100px;
+
+}
+
+.welcome h2
+{
+	margin-top:0px;
+	margin-bottom:50px;
+  margin-left: 70px;
+  margin- right: 70px;
+  text-align: center;
+	letter-spacing: 1px;
+  font-size:40px;
+  font-weight: lighter;
+  font-family: Helvetica;
+}
+
+
+
+.button.large{
+  width: 300px;
+font-size: 17px;
+  padding: 11px 30px 11px;
+}
+
+
+.button-alt,.button,.button.small,.button.large,.button.medium
+{
+display: inline-block;
+padding: 8px 20px;
+margin: 0px 70px 0px 70px;
+/*margin-bottom: 0;*/
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 1px;
+color: #ffffff;
+text-align: center;
+text-shadow: none;
+text-transform: uppercase;
+vertical-align: middle;
+cursor: pointer;
+background-color: #61d8b8;
+background-image: none;
+border: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+width: 300px
+
+}
+
+.button.inverse{
+  background-color: #666666;
+}
+.button:hover, .button.inverse:hover
+{
+	background:#323A40;
+}
+
+.capstext{
+  text-align: center;
+}
+
+.features{
+  text-align: center;
+  font-size: 30px;
+  margin:
+}

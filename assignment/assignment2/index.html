@@ -1,100 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/leaflet.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <!-- =====================
-    Edit css/main.css
-    ====================== -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
+<head>
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <!-- =====================
+  Edit css/main.css
+  ====================== -->
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+  #container-1 {
+    background: #F5F5F5;
+    color: #444;
+    height: 845px;
+    background-size: cover;
+  }
+  #container-2 {
+    background: #D5D5D5;
+    color: #444;
+    height: 845px;
+    background-size: cover;
+  }
+  </style>
+</head>
+<body>
 
-    <!-- =====================
+  <!-- =====================
 
-    # Week 4 - Assignment 2
+  # Week 4 - Assignment 2
 
-    ## Introduction
+  ## Introduction
 
-    Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
-    For this assignment, you will try to recreate a design from a real website.
+  Grids are at the foundation of many web designs (http://designmodo.com/grid-design-theory/).
+  For this assignment, you will try to recreate a design from a real website.
 
-    ## Using a Grid
+  ## Using a Grid
 
-    The CSS file css/grid.css contains several classes that set up the grid we
-    will use for this exercise. Take a look at it to see what classes it offers.
+  The CSS file css/grid.css contains several classes that set up the grid we
+  will use for this exercise. Take a look at it to see what classes it offers.
 
-    1. column: a column controls the width of a block of content in the grid
-    2. row: a row is used to create a horizontal group of columns
-    3. container: a container positions a row in the center of the page and gives
-       it the proper width
+  1. column: a column controls the width of a block of content in the grid
+  2. row: a row is used to create a horizontal group of columns
+  3. container: a container positions a row in the center of the page and gives
+  it the proper width
 
-    Example:
+  Example:
 
-    <div class="container">
-      <div class="row">
-        <div class="column-one-third">
-          Fruits that are good
-        </div>
-        <div class="column-two-thirds">
-          <ul>
-            <li>Pears</li>
-            <li>Plums</li>
-          </ul>
-        </div>
+  <div class="container">
+  <div class="row">
+  <div class="column-one-third">
+  Fruits that are good
+</div>
+<div class="column-two-thirds">
+<ul>
+<li>Pears</li>
+<li>Plums</li>
+</ul>
+</div>
+</div>
+</div>
+
+## Task
+
+Recreate one of the following websites using your own code. For each website,
+see the screen capture that shows which parts to recreate. Your goal for
+recreating these sites is to make them look as similar as possible in terms
+of style and layout. However, you should use your own text and images. For
+royalty free images, check out http://thestocks.im/ or use your own photos.
+
+URL: http://raw.densitydesign.org/
+Which part to recreate: screen-raw.jpg
+
+URL: https://www.cardnest.com/
+Which part to recreate: screen-cardnest.jpg
+
+URL: http://www.hbs.edu/
+WHich part to recreate: screen-hbs.jpg
+
+## Do your best!
+
+Don't worry about getting it perfect. Just try to get it as close as you can.
+
+====================== -->
+
+
+
+
+
+
+
+<div class="vertical-wrapper">
+
+  <div id="container-1" class="container.first">
+
+    <div class="row">
+
+      <div class="welcome">
+        <h1>Raw</h1>
+        <h2>The missing link between spreadsheets and vector graphics.</h2>
+        <p><a class="button large center " target="_self" href="http://app.raw.densitydesign.org/#/" >Use it now!</a></p>
+        <p><a class="button large center inverse" target="_self" href="https://github.com/densitydesign/raw/" >Fork me on Github</a></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="vertical-wrapper">
+  <div id="container-2" class="container">
+    <div class="row">
+      <h1 class= "features">FEATURES</h1>
+      <div class = "column-one-quarter" style= "float">
+        <img src = "http://raw.densitydesign.org/wp-content/uploads/2013/05/features-01.png"/>
+        <p class = "capstext">BUILT ON D3.JS</p>
+        <p class = "paragraphs"> Raw is an open web app to create custom vector-based visualizations on top of the amazing D3.js library through a simple interface.</p>
+
+      </div>
+      <div class = "column-one-quarter" style= "float">
+        <img src = "http://raw.densitydesign.org/wp-content/uploads/2013/05/features-04.png"/>
+        <p class = "capstext">HIGHLY CUSTOMIZABLE</p>
+        <p class = "paragraphs">Raw is an open and customizable project (LGPL license), and you can freely download it and modify it. If you want to contribute to its evolution, fork the project on GitHub!</p>
+      </div>
+      <div class = "column-one-quarter" style= "float">
+        <img src = "http://i.imgur.com/hsB1oAT.png"/>
+        <p class = "capstext">YOUR DATA ARE SAFE</p>
+        <p class = "paragraphs">Even though Raw is a web app, the data you upload will be processed only by the web browser. No server-side operations or storages are performed, no one will see, touch or copy your data!</p>
+      </div>
+      <div class = "column-one-quarter" style= "float">
+        <img src ="http://raw.densitydesign.org/wp-content/uploads/2013/05/features-02.png"/>
+        <p class = "capstext">EXPORT AND REFINE</p>
+        <p class = "paragraphs">Primarily conceived as a tool for designers and vis geeks, Raw allows to export visualizations in vector (SVG) or raster (PNG) format and embed them in your web page.</p>
       </div>
     </div>
-
-    ## Task
-
-    Recreate one of the following websites using your own code. For each website,
-    see the screen capture that shows which parts to recreate. Your goal for
-    recreating these sites is to make them look as similar as possible in terms
-    of style and layout. However, you should use your own text and images. For
-    royalty free images, check out http://thestocks.im/ or use your own photos.
-
-    URL: http://raw.densitydesign.org/
-    Which part to recreate: screen-raw.jpg
-
-    URL: https://www.cardnest.com/
-    Which part to recreate: screen-cardnest.jpg
-
-    URL: http://www.hbs.edu/
-    WHich part to recreate: screen-hbs.jpg
-
-    ## Do your best!
-
-    Don't worry about getting it perfect. Just try to get it as close as you can.
-
-    ====================== -->
-
-    <div class="container">
-      <div class="row">
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-        <div class="column-one-half">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-one-third">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-        <div class="column-two-thirds">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae enim vitae justo tincidunt porttitor et a eros. Quisque accumsan ex metus, et egestas ipsum pellentesque a. In elementum suscipit bibendum. Vestibulum posuere risus quis convallis commodo. Nunc sed est ante. Fusce faucibus, sem nec eleifend tincidunt, mauris nibh condimentum orci, ut imperdiet nulla elit quis magna. Nam vitae lacus dolor. Phasellus bibendum a lorem sed hendrerit. Sed aliquam porttitor dignissim. Cras efficitur vestibulum lorem et consequat.
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+  </div>
+</div>
