@@ -1,6 +1,6 @@
 body {
-    padding: 0;
-    font-family: helvetica, arial, sans-serif;
+  padding: 0;
+  font-family: helvetica, arial, sans-serif;
 }
 
 
@@ -18,30 +18,30 @@ Add more styles here!
 }
 
 .welcome{
-    vertical-align: middle;
-  	text-align: center;
-  	margin: 0 20% 25% 20%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 20% 25% 20%;
 }
 
 .welcome h1
 { margin: 0px 70px 50px 70px;
-	font-size:90px;
-	line-height: 50px;
-	font-weight: 900;
-	text-transform: UPPERCASE;
-	letter-spacing: 10px;
+  font-size:90px;
+  line-height: 50px;
+  font-weight: 900;
+  text-transform: UPPERCASE;
+  letter-spacing: 10px;
   padding-top: 100px;
 
 }
 
 .welcome h2
 {
-	margin-top:0px;
-	margin-bottom:50px;
+  margin-top:0px;
+  margin-bottom:50px;
   margin-left: 70px;
   margin- right: 70px;
   text-align: center;
-	letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size:40px;
   font-weight: lighter;
   font-family: Helvetica;
@@ -51,36 +51,37 @@ Add more styles here!
 
 .button.large{
   width: 300px;
-font-size: 17px;
+  font-size: 17px;
   padding: 11px 30px 11px;
 }
 
 
 .button-alt,.button,.button.small,.button.large,.button.medium
 {
-display: inline-block;
-padding: 8px 20px;
-margin: 0px 70px 0px 70px;
-/*margin-bottom: 0;*/
-font-size: 12px;
-line-height: 20px;
-letter-spacing: 1px;
-color: #ffffff;
-text-align: center;
-text-shadow: none;
-text-transform: uppercase;
-vertical-align: middle;
-cursor: pointer;
-background-color: #61d8b8;
-background-image: none;
-border: none;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none;
-width: 300px
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 0px 70px 0px 70px;
+  /*margin-bottom: 0;*/
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #cc0000;
+  background-image: none;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 300px
 
 }
 
@@ -89,15 +90,24 @@ width: 300px
 }
 .button:hover, .button.inverse:hover
 {
-	background:#323A40;
+  background: #3366ff;
+  color: white
 }
 
 .capstext{
   text-align: center;
+  font-size:27px;
 }
+
+vertical-wrapper.bottom{background-color: gray}
 
 .features{
   text-align: center;
-  font-size: 30px;
-  margin:
+  font-size: 45px;
+  margin-top: 20px
+
+}
+
+.paragraphs{
+  font-size: 20px;
 }
